@@ -1,4 +1,4 @@
-# Installing Watson AIOps 3.3 on ROKS (Pre GA)
+# Installing Watson AIOps 3.3 on ROKS 
 
 This document explains about Installing IBM Watson AIOps AI Manager 3.3.0 on ROKS.
 
