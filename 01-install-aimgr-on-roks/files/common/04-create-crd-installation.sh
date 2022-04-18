@@ -2,9 +2,9 @@
 
 function create_crd_installation () {
 
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 echo "4. Install CRD Installation (ibm-cp-watson-aiops) ..."
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 
 cat << EOF | oc apply -f -
 apiVersion: orchestrator.aiops.ibm.com/v1alpha1

@@ -7,12 +7,20 @@ Installation script is available in [files/10-install.sh](./files/10-install.sh)
 
 ## 1. Update Properties
 
-#### Update entitlement Keys
+#### 1.1 Update entitlement Keys
 
 Update the below properties in `files/00-config.sh` file .
 
 ```
 export ENTITLEMENT_KEY=eyJhbG...........................e4Zog
+```
+
+#### 1.2 Update entitlement Keys
+
+Update the below properties in `files/00-config.sh` file .
+
+```
+export YOUR_LDAP_USER_GROUP=IM_GROUP
 ```
 
 ## 2. Install Infra-Automation
@@ -65,11 +73,14 @@ Refer : https://github.com/IBM/cp4waiops-samples/tree/main/uninstall/3.3
 
 ## Reference
 
-The script is based out of 
+The script is based out of the following.
 
-https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=automation-online-installation-ai-manager
-
+- Online installation of Infrastructure Automation
 https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=automation-online-installation-infrastructure-only#operator
+
+- Deploying Infrastructure management as a containerized deployment (podified).
+https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=automation-online-installation-ai-manager
+https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=management-deploying-infrastructure-as-containerized-deployment-podified#deploy-install-operand
 
 
 ## Note

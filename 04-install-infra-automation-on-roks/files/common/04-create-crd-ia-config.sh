@@ -2,9 +2,10 @@
 
 function create_crd_ia_config () {
 
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 echo "4. Install CRD IAConfig (ibm-ia-installer) ..."
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
+
 
 cat << EOF | oc apply -f -
 apiVersion: aiops.ibm.com/v1alpha1

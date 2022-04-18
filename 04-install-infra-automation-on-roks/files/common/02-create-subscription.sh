@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-function subscribe_operator() {
+function create_subscription() {
 
-### Install  Infra Automation operator (Subscription)
-echo "-----------------------------------"
-echo "2. Install  Infra Automation operator (Subscription)"
-echo "-----------------------------------"
+### Install the Infrastructure Automation operator (Subscription)
+echo "----------------------------------------------------------------------"
+echo "2. Install operator (Subscription : ibm-infrastructure-automation-operator)"
+echo "----------------------------------------------------------------------"
 cat << EOF | oc apply -f -
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription

@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-function verify_ia_config() {
+function verify_crd_installation() {
 
-echo "-----------------------------------"
-echo "7. Verify the IA Config installation..."
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
+echo "5. Verify CRD Installation ..."
+echo "----------------------------------------------------------------------"
 echo "Executing the below command ...."
-echo "oc get IAConfig ibm-ia-installer -n $NAMESPACE | grep Running."
+echo "oc get installations.orchestrator.aiops.ibm.com ibm-cp-watson-aiops -n $NAMESPACE | grep Running"
 echo "The output should be like this...."
 echo "ibm-ia-installer   Running   ibmc-file-gold-gid   4m53s"
 
@@ -21,7 +21,7 @@ while [[ ${RESOURCE_FOUND} == "false" && $LOOP_COUNT -lt $MAX_LOOP_COUNT ]]; do
     LOOP_COUNT=$((LOOP_COUNT+1))
     echo "Trying for $LOOP_COUNT / $MAX_LOOP_COUNT."
 
-    RESOURCE_COUNT=$(oc get IAConfig ibm-ia-installer -n ${NAMESPACE} | grep -c Running)
+    RESOURCE_COUNT=$(oc get installations.orchestrator.aiops.ibm.com ibm-cp-watson-aiops -n ${NAMESPACE} | grep -c Running)
 
     if [[ $RESOURCE_COUNT -gt 0 ]]; 
     then
@@ -34,17 +34,16 @@ done
 
 if [[ $RESOURCE_FOUND == "true" ]]; 
 then
-    echo "Resource ibm-ia-installer is found in Running state"
+    echo "Resource installations.orchestrator.aiops.ibm.com ibm-cp-watson-aiops is found in Running state"
     export GLOBAL_VERIFY_STATUS=true
 else
-    echo "Resource ibm-ia-installer is NOT found in Running state"
+    echo "Resource installations.orchestrator.aiops.ibm.com ibm-cp-watson-aiops is NOT found in Running state"
     export GLOBAL_VERIFY_STATUS=false
 fi
 
-
-echo "STATS11: ${GLOBAL_POD_VERIFY_STATUS} "
-
+echo "Status : ${GLOBAL_VERIFY_STATUS} "
 
 echo "Process completed .... "
+
 
 }

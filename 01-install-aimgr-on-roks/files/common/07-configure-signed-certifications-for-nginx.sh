@@ -1,17 +1,14 @@
 #!/usr/bin/env bash
 
-echo "Configure signed certificates for NGINX started"
-
 function configure_signed_certificates_for_NGINX () {
 
-echo "-----------------------------------"
-echo "6. Configure signed certificates for NGINX  ......"
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
+echo "7. Configure signed certificates for NGINX  ......"
+echo "----------------------------------------------------------------------"
 
 echo "-----------------------------------"
-echo "6.1. Delete your AutomationUIConfig instance and quickly re-create it before the Installation operator automatically re-creates it"
+echo "7.1. Delete your AutomationUIConfig instance and quickly re-create it before the Installation operator automatically re-creates it"
 echo "-----------------------------------"
-
 
 AUTO_UI_INSTANCE=$(oc get AutomationUIConfig -n $NAMESPACE --no-headers -o custom-columns=":metadata.name")
 IAF_STORAGE=$(oc get AutomationUIConfig -n $NAMESPACE -o jsonpath='{ .items[*].spec.zenService.storageClass }')
@@ -43,7 +40,7 @@ spec:
 EOF
 
 echo "-----------------------------------"
-echo "6.2. Replace the existing secret with a secret that contains the AI Manager ingress certificate."
+echo "7.2. Replace the existing secret with a secret that contains the AI Manager ingress certificate."
 echo "-----------------------------------"
 
 # Get the certificate and key from AI Manager ingress.
@@ -62,5 +59,10 @@ oc create secret generic -n $NAMESPACE external-tls-secret --from-file=cert.crt=
 
 # Recreate nginx. The new NGINX pods get the new certificate. It takes a few minutes for the NGINX pods to come back up.
 oc delete pod $(oc get po -n $NAMESPACE |grep ibm-nginx |awk '{print$1}') -n $NAMESPACE
+
+# Remove temp files
+rm cert.crt
+rm cert.key
+rm external-tls-secret.yaml
 
 }

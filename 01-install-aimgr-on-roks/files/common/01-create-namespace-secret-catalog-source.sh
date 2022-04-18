@@ -2,9 +2,9 @@
 
 function create_namespace_secret_catalog_source() {
 
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 echo "1. Installing - Namespace, OperatorGroup, secrets, ServiceAccount and CatalogSource started"
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 
 echo "-----------------------------------"
 echo "1.1. Create namespace cp4waiops ..."

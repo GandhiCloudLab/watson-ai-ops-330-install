@@ -2,9 +2,9 @@
 
 function create_crd_im_install () {
 
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 echo "8. Install CRD IMInstall (ibm-ia-installer) ..."
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 
 YOUR_IM_HTTPD_ROUTE=$(oc get route -n ibm-common-services cp-console -o jsonpath={.spec.host})
 echo "YOUR_IM_HTTPD_ROUTE ==> $YOUR_IM_HTTPD_ROUTE" 

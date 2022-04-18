@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-function verify_ai_manager_operator() {
+function verify_operator_pod() {
 
-echo "-----------------------------------"
-echo "3. Verify the AI Manager operator installation..."
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
+echo "3. Verify operator installation... (pod : ibm-aiops-orchestrator) "
+echo "----------------------------------------------------------------------"
 echo "Executing the below command ...."
 echo "oc get pods -n $NAMESPACE | grep ibm-aiops-orchestrator."
 echo "The output should be like this...."
@@ -42,7 +42,7 @@ else
 fi
 
 
-echo "STATS11: ${GLOBAL_POD_VERIFY_STATUS} "
+echo "Verify Status : ${GLOBAL_POD_VERIFY_STATUS} "
 
 
 echo "Process completed .... "

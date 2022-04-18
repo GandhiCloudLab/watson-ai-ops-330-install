@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-function subscribe_ai_manager_operator() {
+function create_subscription() {
 
 ### Install  AI Manager operator (Subscription)
-echo "-----------------------------------"
-echo "2. Install  AI Manager operator (Subscription)"
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
+echo "2. Install AI Manager operator (Subscription : ibm-aiops-orchestrator)"
+echo "----------------------------------------------------------------------"
+
 cat << EOF | oc apply -f -
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
