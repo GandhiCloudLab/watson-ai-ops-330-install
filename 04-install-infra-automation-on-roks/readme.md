@@ -55,7 +55,7 @@ To get the Infra Automation URL, user and password anytime after Infra Automatio
 
 ```
 cd files
-sh 11-print-url-usr-pwd.sh
+sh 19-print-url-usr-pwd.sh
 ```
 
 ## 4. UnInstall
