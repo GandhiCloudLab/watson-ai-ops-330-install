@@ -2,9 +2,9 @@
 
 function patch_serviceaccount_ibm_operator_catalog () {
 
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 echo " 2. Patch imagePullSecrets in the resource : serviceaccount (ibm-operator-catalog) in  openshift-marketplace namespace and patch it with imagePullSecrets"
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 
 RESOURCE_COUNT=0
 RESOURCE_FOUND=false

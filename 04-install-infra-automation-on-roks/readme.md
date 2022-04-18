@@ -7,17 +7,16 @@ Installation script is available in [files/10-install.sh](./files/10-install.sh)
 
 ## 1. Update Properties
 
-#### 1.1 Update entitlement Keys
-
 Update the below properties in `files/00-config.sh` file .
+
+
+#### 1.1 Update entitlement Keys
 
 ```
 export ENTITLEMENT_KEY=eyJhbG...........................e4Zog
 ```
 
-#### 1.2 Update entitlement Keys
-
-Update the below properties in `files/00-config.sh` file .
+#### 1.2 Update LDAP User Group
 
 ```
 export YOUR_LDAP_USER_GROUP=IM_GROUP
@@ -79,8 +78,7 @@ The script is based out of the following.
 https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=automation-online-installation-infrastructure-only#operator
 
 - Deploying Infrastructure management as a containerized deployment (podified).
-https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=automation-online-installation-ai-manager
-https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=management-deploying-infrastructure-as-containerized-deployment-podified#deploy-install-operand
+ https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=management-deploying-infrastructure-as-containerized-deployment-podified#deploy-install-operand
 
 
 ## Note

@@ -2,9 +2,9 @@
 
 function create_namespace_secret_catalog_subscription() {
 
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 echo "1. Creating - Namespace, Secrets, Operator Group, CatalogSource and Subscription"
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 
 echo "-----------------------------------"
 echo "1.1. Create namespace $EVENT_MANAGER_NAMESPACE ..."

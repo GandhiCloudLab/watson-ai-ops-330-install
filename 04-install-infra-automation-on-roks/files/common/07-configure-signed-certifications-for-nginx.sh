@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-echo "Configure signed certificates for NGINX started"
-
 function configure_signed_certificates_for_NGINX () {
 
 echo "----------------------------------------------------------------------"

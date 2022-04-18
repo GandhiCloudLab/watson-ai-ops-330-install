@@ -2,9 +2,9 @@
 
 function verify_event_manager_operator() {
 
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 echo "3. Verify Event Manager operator subscription installation .."
-echo "-----------------------------------"
+echo "----------------------------------------------------------------------"
 
 echo "Executing the below command ...."
 echo "oc get csv -n $EVENT_MANAGER_NAMESPACE | grep Event Manager"
