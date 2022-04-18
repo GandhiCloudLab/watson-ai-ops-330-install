@@ -2,7 +2,7 @@
 
 This document explains about Installing IBM Watson AIOps AI Manager 3.3.0 on ROKS.
 
-Installation script is available in [files/10-install-ai-manager.sh](./files/10-install-ai-manager.sh).
+Installation script is available in [files/10-install.sh](./files/10-install.sh).
 
 ## 1. Update Properties
 
@@ -26,7 +26,7 @@ Goto the `files` folder and Run the install script as like below.
 
 ```
 cd files
-sh 10-install-ai-manager.sh
+sh 10-install.sh
 ```
 
 - It would take around 1hr to complete the istallation. 
@@ -55,7 +55,7 @@ To get the AIMgr URL, user and password anytime after AIMgr install, you can run
 
 ```
 cd files
-sh 11-print-ai-manager-url-usr-pwd.sh
+sh 11-print-url-usr-pwd.sh
 ```
 
 ## 4. UnInstall
