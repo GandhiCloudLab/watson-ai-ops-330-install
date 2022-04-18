@@ -1,4 +1,4 @@
-# Installing Watson AIOps 3.3 on ROKS 
+# Installing Watson AIOps AI Manager 3.3 on ROKS 
 
 This document explains about Installing IBM Watson AIOps AI Manager 3.3.0 on ROKS.
 
@@ -65,3 +65,8 @@ Refer : https://github.com/IBM/cp4waiops-samples/tree/main/uninstall/3.3
 ## Reference
 
 The script is based out of https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=manager-starter-installation-cli
+
+
+## Note
+
+This script can be installed on top existing Watson AIOps Infra Automation 3.3.

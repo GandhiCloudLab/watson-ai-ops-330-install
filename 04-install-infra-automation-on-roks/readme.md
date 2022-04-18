@@ -1,8 +1,9 @@
-# Installing Watson AIOps Infra Automation 3.3 on ROKS  (draft)
+# Installing Watson AIOps Infra Automation 3.3 on ROK
 
 This document explains about Installing IBM Watson AIOps Infra Automation 3.3.0 on ROKS.
 
 Installation script is available in [files/10-install.sh](./files/10-install.sh).
+
 
 ## 1. Update Properties
 
@@ -69,3 +70,8 @@ The script is based out of
 https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=automation-online-installation-ai-manager
 
 https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=automation-online-installation-infrastructure-only#operator
+
+
+## Note
+
+This script can be installed on top existing IBM Watson AIOps AI Manager 3.3.0 instance.
