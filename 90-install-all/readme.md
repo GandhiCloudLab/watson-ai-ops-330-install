@@ -17,13 +17,13 @@ Update the below properties in [../01-install-aimgr-on-roks/files/00-config.sh](
 export ENTITLEMENT_KEY=eyJhbG...........................e4Zog
 ```
 
-### Update Event Manager config.sh
+<!-- ### Update Event Manager config.sh
 
 Update the below properties in [../02-install-eventmgr-on-roks/files/00-config.sh](../02-install-eventmgr-on-roks/files/00-config.sh) file .
 
 ```
 export ENTITLEMENT_KEY=eyJhbG...........................e4Zog
-```
+``` -->
 
 ### Update Infra Automation config.sh
 
