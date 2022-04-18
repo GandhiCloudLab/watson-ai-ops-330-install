@@ -8,12 +8,6 @@ This document helps to install the following on ROKS.
 
 ## 1. Update Properties
 
-
-00-config.sh
-
-1. [./Installing Watson AIOps 3.3 on ROKS](./01-install-aimgr-on-roks)
-
-
 ### Update AI Manager config.sh
 
 Update the below properties in [../01-install-aimgr-on-roks/files/00-config.sh](../01-install-aimgr-on-roks/files/00-config.sh) file .
@@ -93,7 +87,3 @@ Refer : https://github.com/IBM/cp4waiops-samples/tree/main/uninstall/3.3
 
 The script is based out of https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=manager-starter-installation-cli
 
-
-## Note
-
-This script can be installed on top existing Watson AIOps Infra Automation 3.3.
