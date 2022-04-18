@@ -3,7 +3,7 @@
 function print_aiops_console_url_pwd () {
 
 echo "-----------------------------------"
-echo "7. Printing Infra Automation console access details..."
+echo "9. Printing Infra Automation console access details..."
 echo "-----------------------------------"
 
 MY_URL=$(oc get route -n $NAMESPACE cpd -o jsonpath={.spec.host})

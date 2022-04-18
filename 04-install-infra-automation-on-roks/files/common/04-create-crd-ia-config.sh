@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function create_crd_installation () {
+function create_crd_ia_config () {
 
 echo "-----------------------------------"
 echo "4. Install CRD IAConfig (ibm-ia-installer) ..."
@@ -25,10 +25,6 @@ spec:
     accept: true
   storageClass: $STORAGE_CLASS
 EOF
-
-
-
-
 
 echo "Process completed .... "
 

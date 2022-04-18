@@ -10,6 +10,13 @@ source ./common/05-verify-ai-manager-pods.sh
 source ./common/06-configure-signed-certifications-for-nginx.sh
 source ./common/07-print-aiops-console-url-pwd.sh
 
+function sync_cassandra () {
+  oc project $NAMESPACE
+
+  ### Note: This file is downloaded from https://github.com/IBM/cp4waiops-samples/blob/main/post-install/3.3/sync-cassandra.sh
+  common/11-sync-cassandra.sh
+}
+
 install_main() {
 
   date1=$(date '+%Y-%m-%d %H:%M:%S')
@@ -27,6 +34,7 @@ install_main() {
       configure_signed_certificates_for_NGINX
     fi
     print_aiops_console_url_pwd
+    sync_cassandra
   fi
 
   date1=$(date '+%Y-%m-%d %H:%M:%S')

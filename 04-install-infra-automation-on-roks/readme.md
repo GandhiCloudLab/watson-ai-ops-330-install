@@ -64,4 +64,8 @@ Refer : https://github.com/IBM/cp4waiops-samples/tree/main/uninstall/3.3
 
 ## Reference
 
-The script is based out of https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=manager-starter-installation-cli
+The script is based out of 
+
+https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=automation-online-installation-ai-manager
+
+https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.3.0?topic=automation-online-installation-infrastructure-only#operator

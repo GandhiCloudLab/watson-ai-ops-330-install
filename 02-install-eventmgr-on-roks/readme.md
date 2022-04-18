@@ -60,7 +60,7 @@ To get the AIMgr URL, user and password anytime after AIMgr install, you can run
 
 ```
 cd files
-sh 11-print-url-usr-pwd.sh
+sh 19-print-url-usr-pwd.sh
 ```
 
 ## 4. UnInstall
