@@ -49,7 +49,17 @@ PASSWORD: EpU2m........................jYUz
 
 You can use this to login into the WAIOps Console.
 
-## 3. Printing URL, Usr and Pwd
+
+## 4. Restarting Cassandra Pods
+
+Need to restart the Cassandra pods. Run the below command.
+
+```
+cd files
+sh 11-install-sync-cassandra.sh
+```
+
+## 5. Printing URL, Usr and Pwd
 
 To get the AIMgr URL, user and password anytime after AIMgr install, you can run the below command. This will print the output as like above.
 
@@ -58,7 +68,7 @@ cd files
 sh 19-print-url-usr-pwd.sh
 ```
 
-## 4. UnInstall
+## 6. UnInstall
 
 Refer : https://github.com/IBM/cp4waiops-samples/tree/main/uninstall/3.3
 
