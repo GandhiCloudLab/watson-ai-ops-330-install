@@ -30,7 +30,7 @@ install_main() {
       verify_pods_count
       if [[ $GLOBAL_POD_VERIFY_STATUS == "true" ]]; then 
         configure_signed_certificates_for_NGINX
-        create_crd_im_install
+        # create_crd_im_install
         print_aiops_console_url_pwd
       fi  
     fi
