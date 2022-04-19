@@ -42,7 +42,7 @@ POD_COUNT=$(oc get pods -n $NAMESPACE | grep 'Failed\|Error\|CrossLoopBackOff\|P
 if [[ $POD_COUNT -gt 0 ]]; then
   echo "Pods Count with Issues : $POD_COUNT"
   echo "Here are the pods with issues......"
-  oc get pods | grep 'Failed\|Error\|CrossLoopBackOff\|Pending'
+  oc get pods -n $NAMESPACE | grep 'Failed\|Error\|CrossLoopBackOff\|Pending'
 
 else
   echo "Pods Count with Issues : $POD_COUNT"
