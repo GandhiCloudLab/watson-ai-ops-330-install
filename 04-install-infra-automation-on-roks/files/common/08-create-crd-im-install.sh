@@ -7,7 +7,10 @@ echo "8. Install CRD IMInstall (ibm-ia-installer) ..."
 echo "----------------------------------------------------------------------"
 
 YOUR_IM_HTTPD_ROUTE=$(oc get route -n ibm-common-services cp-console -o jsonpath={.spec.host})
-echo "YOUR_IM_HTTPD_ROUTE ==> $YOUR_IM_HTTPD_ROUTE" 
+echo "YOUR_IM_HTTPD_ROUTE before ==> $YOUR_IM_HTTPD_ROUTE" 
+
+YOUR_IM_HTTPD_ROUTE=$(echo $YOUR_IM_HTTPD_ROUTE | sed "s/cp-console/inframgmt/")
+echo "YOUR_IM_HTTPD_ROUTE after ==> $YOUR_IM_HTTPD_ROUTE" 
 
 cat << EOF | oc apply -f -
 apiVersion: infra.management.ibm.com/v1alpha1
